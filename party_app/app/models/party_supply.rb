@@ -1,0 +1,2 @@
+class PartySupply < ApplicationRecord
+end

@@ -1,0 +1,44 @@
+<h1>This is your results</h1>
+<br />
+<p>
+     page with the list of items and a grand total price.
+     <br>
+     <br>
+     <br>
+
+     <ol>
+     <% @my_d.each do |v| %>
+        <li>1 <%= v.name %> for a price of: <%= v.price %></li>
+     <% end %>
+     <% @my_m.each do |v| %>
+        <li>1 <%= v.name %> for a price of: <%= v.price %></li>
+     <% end %>
+     <% @my_snacks.each do |v| %>
+        <li>1 <%= v.name %> for a price of: <%= v.price %></li>
+     <% end %>
+     <% @my_entertainment.each do |v| %>
+        <li>1 <%= v.name %> for a price of: <%= v.price %></li>
+     <% end %>
+     <% @my_ps.each do |v| %>
+        <li>1 <%= v.name %> for a price of: <%= v.price %></li>
+     <% end %>
+
+     <br>
+     <br>
+     <br>
+     The price per person <%= @ppp %>
+     <br>
+
+
+
+
+
+     </ol>
+
+
+
+
+
+
+    </p>
+<%= link_to "Back to Home", '/' %>
